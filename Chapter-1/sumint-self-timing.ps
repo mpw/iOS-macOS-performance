@@ -1,0 +1,10 @@
+%!
+/Helvetica 25 selectfont 100 100 moveto
+/intshow { 20 string cvs show } bind def
+usertime
+
+0 10000 { 0 0 1 1000 { add }  for exch pop } bind repeat
+exch usertime exch sub intshow ( ms result: ) show intshow
+
+showpage
+

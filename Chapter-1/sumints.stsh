@@ -1,0 +1,4 @@
+#!/usr/local/bin/stsh
+#-sumint:<int>n
+#1 to: 100 do: [ :k | sum := 0.  1 to: n do: [ :i | sum:=sum+i. ]].
+1 to: 100 do: [ :k | sum := (n*n+n)/2.   ]].
