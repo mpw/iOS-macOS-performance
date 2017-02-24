@@ -15,3 +15,13 @@ Performance tricks and samples in Chapters 2 and 4 are from these two frameworks
 
 
 
+### Chapter 1
+
+
+
+### Chapter 17
+
+The JPJP fork of the JPNG file format can be found here:  [https://github.com/mpw/JPNG](https://github.com/mpw/JPNG).
+
+
+
