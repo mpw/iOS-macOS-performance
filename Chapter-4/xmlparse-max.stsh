@@ -1,0 +1,10 @@
+#!/usr/local/bin/stsh
+#-<void>parse:file
+context loadFramework:'MPWXmlKit'.
+#data := file:iTunesMusic.xml rawData.
+data := NSData dataWithContentsOfMappedFile:file.
+parser := MPWMAXParser parser.
+parser setUndefinedTagAction:0.
+
+1 to:1 do:[ :i | parser parse:data. ].
+

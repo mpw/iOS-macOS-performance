@@ -1,0 +1,6 @@
+#!/usr/local/bin/stsh
+#-<void>parse:file
+#data := file:iTunesMusic.xml rawData.
+data := NSData dataWithContentsOfMappedFile:file.
+document := NSXMLDocument alloc initWithData:data options:0 error:nil.
+
