@@ -1,0 +1,70 @@
+// !$*UTF8*$!
+{
+	1D6058900D05DD3D006BFB54 /* DictTest */ = {
+		activeExec = 0;
+		executables = (
+			3B2846260F951D7F00CF8FA4 /* DictTest */,
+		);
+	};
+	28D7ACF70DDB3853001CB0EB /* ViewController.m */ = {
+		uiCtxt = {
+			sepNavIntBoundsRect = "{{0, 0}, {565, 2745}}";
+			sepNavSelRange = "{4792, 0}";
+			sepNavVisRange = "{708, 259}";
+		};
+	};
+	29B97313FDCFA39411CA2CEA /* Project object */ = {
+		activeBuildConfigurationName = Release;
+		activeExecutable = 3B2846260F951D7F00CF8FA4 /* DictTest */;
+		activeTarget = 1D6058900D05DD3D006BFB54 /* DictTest */;
+		addToTargets = (
+			1D6058900D05DD3D006BFB54 /* DictTest */,
+		);
+		codeSenseManager = 3B28462F0F951D9B00CF8FA4 /* Code sense */;
+		executables = (
+			3B2846260F951D7F00CF8FA4 /* DictTest */,
+		);
+		perUserDictionary = {
+			PBXPerProjectTemplateStateSaveDate = 261430825;
+			PBXWorkspaceStateSaveDate = 261430825;
+		};
+		sourceControlManager = 3B28462E0F951D9B00CF8FA4 /* Source Control */;
+		userBuildSettings = {
+		};
+	};
+	3B2846260F951D7F00CF8FA4 /* DictTest */ = {
+		isa = PBXExecutable;
+		activeArgIndices = (
+		);
+		argumentStrings = (
+		);
+		autoAttachOnCrash = 1;
+		breakpointsEnabled = 0;
+		configStateDict = {
+		};
+		customDataFormattersEnabled = 1;
+		debuggerPlugin = GDBDebugging;
+		disassemblyDisplayState = 0;
+		dylibVariantSuffix = "";
+		enableDebugStr = 1;
+		environmentEntries = (
+		);
+		executableSystemSymbolLevel = 0;
+		executableUserSymbolLevel = 0;
+		libgmallocEnabled = 0;
+		name = DictTest;
+		sourceDirectories = (
+		);
+	};
+	3B28462E0F951D9B00CF8FA4 /* Source Control */ = {
+		isa = PBXSourceControlManager;
+		fallbackIsa = XCSourceControlManager;
+		isSCMEnabled = 0;
+		scmConfiguration = {
+		};
+	};
+	3B28462F0F951D9B00CF8FA4 /* Code sense */ = {
+		isa = PBXCodeSenseManager;
+		indexTemplatePath = "";
+	};
+}
