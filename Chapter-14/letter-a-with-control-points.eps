@@ -1,0 +1,147 @@
+%!PS-Adobe-3.0 EPSF-1.2
+%%BoundingBox: 0 0 1100 415
+%%EndComments
+0.7 dup scale
+/Times-Roman 1090 selectfont
+20 dup translate
+7 setflat
+gsave
+0 40 moveto
+0 setgray
+1 setlinewidth
+(a) false charpath  
+gsave
+stroke
+grestore
+1 setlinewidth
+
+0 setgray
+/drawBoxAtCurrentPoint
+{
+	gsave
+	translate
+	0 0 0.7 setrgbcolor 
+	-3 -3 6 6 rectstroke 
+	grestore
+} bind def
+/fillBoxAtCurrentPoint
+{
+	gsave
+	translate
+	0.8 0 0 setrgbcolor
+	0.5 setlinewidth
+	0 0 4 0 360 arc	stroke
+	grestore
+} bind def
+
+/drawBoxAndMove
+{
+	2 copy
+	 drawBoxAtCurrentPoint
+	moveto
+} bind def
+
+
+/drawControlPoint
+{
+	2 copy
+	gsave
+	0.2 setgray
+	 [ 1 0 ] 0 setdash 
+	 drawFilledBoxAtCurrentPoint
+	grestore
+	moveto
+} bind def
+
+{   drawBoxAndMove }
+{    drawBoxAndMove }
+{
+	6 dict begin
+	currentpoint 
+	/oy exch def
+	/ox exch def
+	/fy exch def
+	/fx exch def
+	/c2y exch def
+	/c2x exch def
+	/c1y exch def
+	/c1x exch def
+	
+	fx fy drawBoxAndMove
+	ox oy moveto c1x c1y lineto stroke
+	fx fy moveto c2x c2y lineto stroke
+	c1x c1y fillBoxAtCurrentPoint
+	c2x c2y fillBoxAtCurrentPoint
+	fx fy moveto
+
+	end
+  }
+{   }
+pathforall
+
+grestore
+500 0 translate
+gsave
+0 40 moveto
+4 setflat
+
+(a) false charpath flattenpath
+gsave stroke grestore
+
+{  drawBoxAndMove }
+{  drawBoxAndMove }
+{  }
+{  }
+pathforall
+grestore
+500 0 translate
+30 40 moveto
+0.15 setlinewidth
+
+/rectintersectscurrentclip 
+{
+	4 { pop } repeat
+} bind def
+
+/grid {
+    5 dict begin
+   /op exch def
+   /ymax exch def
+   /xmax exch def
+   /step exch def
+   0 step ymax {
+	/y exch def
+	0 step xmax {
+		/x exch def
+		x y step step op load exec
+	} for
+   } for
+   end
+} bind def
+
+10 520 570  /rectstroke grid
+
+30 40 moveto
+2 setlinewidth
+(a) false charpath gsave stroke grestore
+clip
+
+
+
+/insetrectfill {
+	4 dict begin
+	/h exch def
+	/w exch def
+	/y exch def
+	/x exch def
+	x 1 add y 1 add w 2 sub h 2 sub rectfill
+	end
+} bind def
+
+
+0.7 setgray
+10 520 570 /insetrectfill grid
+
+
+showpage
+
